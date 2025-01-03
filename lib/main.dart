@@ -13,9 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
+        primarySwatch: Colors.amber,
+        floatingActionButtonTheme: const FloatingActionButtonThemeData(
+          backgroundColor: Colors.amber,
+        ),
         appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.amber, // Ensures the AppBar matches the theme
-
+          backgroundColor: Colors.amber, // Constant theme for appBar
         ),
       ),
       home: const Home(),
